@@ -1,0 +1,168 @@
+<!-- reveiw questions to Submit in today's file prapti dave.txt --> 
+<!--
+Copy the questions below into the prapti dave.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+    Semantic HTML is all about providing meaning to our content.
+
+    2. What is HTML used for? 
+    HTML is used to create electronic documents(called pages) that are displayed on the World Wide Web.Each page contains a series of connections to other pages called hyperlinks.
+
+    3. What is an attribute and where do we put it? 
+    Attributes provide additional information about HTML elements.All HTML elements can have attributs.Attributes are always specified in the start tag.Attributes usally come in name/value pairs like:name="value".
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag is used for the title of a page or post.use only one h1 tag per page.
+
+    5. Name two tags that have required attributes
+    (1) Table tag ,it attributes determine how the table looks.eg:border,padding,spacing,width,bgcolor.
+    (2) TD tag,it surrounds the content of a cell within a table.Every TD tag must be within the table tag.eg:align,valign,bgcolor,rowspan,colspan.
+
+    6. What do we put in the head of our HTML document? 
+    The head tag surrounds information about the page such as title,description,keywords etc.
+
+    7. What is an id? 
+    The id attribute specifies a unique id for an html element.The id attribute is most used to point to a style in a style sheet.
+
+    8. What elements can I add an id to? 
+    more than universal,element,pseudo-classes and classes.less than inline styles, and important.
+
+    9. How many times can I use the same id on a page? 
+    Ids are allowed to be used once per HTML page.
+
+    10. What is a class? 
+    classes allow us to select individual elements by placing a special attribute in out HTML.We can use the same class over and over again on many elements.this behaviour is extremely powerful and allows designers and
+    developers to be more efficient.
+
+    11. What elements can I add a class to? 
+    more than universal and element,less than ID,inline and important.
+
+    12. How many times can I use the same class on a page? 
+    classes can be used as many times as needed within a page.
+
+    13. How do I get my link to open in a new tab?
+    You can also click on a link and hold down the mouse without releasing, dragging the link to the browser's tab bar to open it in a new tab.
+
+    14. What is the alt attribute used for? 
+    Alt attribute specifies an alternate text for an image,if the image can not be displayed.The alt attribute provides alternative information for an image if a user for some reason cannot view it.
+
+    15. How do I reference an id?
+    #id{
+        css declaration;
+    }
+
+    16. What is the difference between a section and a div
+    A section tag defines sections in a document,such as headers,footers,or any other sections of the document.
+    A div tag defines a division or a section in an html document.the div tag is used to group block-elements to format them with css.
+
+    17. What is CSS used for? 
+    CSS is a style sheet language used for describing the presentation of a document written in a markup language like html.
+
+    18. How to we select an element? Example - every h2 on the page
+    h2{
+        color: red;
+    }
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    In the css , a class selector is a name preceded by a full stop(".") and an id selector is a name preceded by a hash character("#").The difference between an id and a class is that an id can be used to identify one 
+    element.whereas a class can be used to identify more than one.
+   for eg: css might look like:
+    #top{
+        background-color: pink;
+        padding: 20px;
+    }
+    .intro{
+        color: red;
+        font-weight: bold;
+    }
+    the html refers to the csss by using the attributesid and class ,it might look like:
+    <div id="top">
+        <h1> choclate curry</h1>
+         <p class="intro">This is my receipe for making curry purley with choclate</p>
+            <p class="intro">Mmmmmmm mmm  mm yummy</p>
+    </div>
+
+    20. How do we select classes in CSS?
+    To select elements with a specific class,write a period(".") character,followed by the nameof the class.
+
+    21. How do we select a p element with a single class of “human””?
+    p.human
+
+    22. What is a parent child selector? When would this be useful? 
+    The parent child selector selects all elements that are a direct child of the specified element.
+    it can be useful for contextual selectors and parent child selectors can be combined, for instance,div ol~li p groups as follows (DIV (OL ~ (LI P))),
+     i.e., it matches a P that is a descendant of an LI, that is in turn a child of an OL, which is a descendant of a DIV. 
+
+    23. How do you select all links within a div with the class of sidebar?
+    $('#blogpagination').find('a').attr('href');
+
+    24. What is a pseudo selector?
+    It selects elements that are in a specific state.
+
+    25. What do we use the change the spacing between lines?
+    line-height
+
+    26. What do we use to change the spacing between letters?
+    letter-spacing:
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    .div class name:hover{
+        border: 1px dotted black;
+    }
+
+    29. How do I select everything on the page? 
+    right click on page then select all option.
+
+    30. How do I write a comment in CSS?
+    /* comment */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+    $pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    $ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    $rm path/to/file.ext
+    it will remove the file permentally without asking any warnings.
+
+    34. Why should I use version control? 
+    Version control helps team solve problems,tracking every individual change by each contributor and helping prevent concurrent work from conflicting.
+    changes made in one part of the software can be incompatible with those made by another developer working at the same time.
+
+    35. How often should I commit to github?
+    whenever you finish a step,git commit record your changes to the local repository.
+
+    36. What is the command we would use to push our repo up to github? 
+    git push origin[branch name]
+
+    37. Walk me through Lambda's git flow. 
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    You can't put block elements inside inline elements. Formatting. By default, inline elements do not force a new line to begin in the document flow.
+    Block elements, on the other hand, typically cause a line break to occur (although, as usual, this can be changed using CSS).
+
+    2. What happens when an element is positioned absolutely? 
+    In contrast, an element that is absolutely positioned is taken out of the flow; thus, other elements are positioned as if it did not exist.
+    The absolutely positioned element is positioned relative to its nearest positioned ancestor (i.e., the nearest ancestor that is not static ).
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    box-sizing
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    <span>A display property with a value of "block" results in </span>
+    <span>a line between the two elements.</span>
+    <ul>
+    <li>< a href="/html/default.asp" target="_blank">HTML</a></li>
+    </ul>
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+    The CSS box model is essentially a box that wraps around every HTML element .it consists of margins.borders,padding and the actual content.
+    box-sizing.
+
